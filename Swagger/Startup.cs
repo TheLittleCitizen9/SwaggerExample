@@ -27,20 +27,6 @@ namespace Swagger
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            
-            //services.AddOpenApiDocument(configure =>
-            //{
-            //    configure.Title = "Title";
-            //    configure.AddSecurity("JWT", Enumerable.Empty<string>(), new NSwag.OpenApiSecurityScheme
-            //    {
-            //        Type = NSwag.OpenApiSecuritySchemeType.ApiKey,
-            //        Name = "Authorization",
-            //        In = NSwag.OpenApiSecurityApiKeyLocation.Header,
-            //        Description = "Type into the textbox: Bearer {your JWT token}."
-            //    });
-            //    configure.OperationProcessors.Add(new AspNetCoreOperationSecurityScopeProcessor("JWT"));
-            //});
-
             services.AddSwaggerDocument(o => o.Title = "My Awesome API");
 
             
